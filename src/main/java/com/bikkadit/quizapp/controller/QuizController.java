@@ -37,6 +37,11 @@ public class QuizController {
 
 		return new ResponseEntity<List<QuestionMapper>>(this.quizService.getQuiz(quizId), HttpStatus.OK);
 	}
+	@GetMapping("/quiz/{quizId1}")
+	public ResponseEntity<List<QuestionMapper>> getQuiz(@PathVariable Long quizId) {
+
+		return new ResponseEntity<List<QuestionMapper>>(this.quizService.getQuiz(quizId), HttpStatus.OK);
+	}
 
 	@GetMapping("/quizresult/{quizId}")
 	public ResponseEntity<Integer> resultQuiz(@PathVariable long quizId, @RequestBody List<Response> responses) {

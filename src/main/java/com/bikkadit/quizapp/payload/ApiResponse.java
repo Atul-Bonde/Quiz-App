@@ -29,5 +29,11 @@ public class ApiResponse {
 	public void setStatus(Boolean status) {
 		this.status = status;
 	}
-      
+     
+	@Override
+	public String toString() {
+		return "ApiResponse [msg=" + msg + ", status=" + status + "]";
+	}
+	
+	
 }

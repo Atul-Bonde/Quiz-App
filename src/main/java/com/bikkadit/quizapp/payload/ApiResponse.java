@@ -15,4 +15,11 @@ public class ApiResponse {
 	
 	private Boolean status;
 
+	@Override
+	public String toString() {
+		return "ApiResponse [msg=" + msg + ", status=" + status + "]";
+	}
+	
+	
+
 }
